@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "Block reddit login",
+  "description": "makes it ",
+  "version": "1.0",
+  "content_scripts": [
+      {
+          "matches": ["https://www.reddit.com/*"],
+          "js": ["redditcontent.js"],
+          "run_at": "document_idle"}
+  ]
+}
